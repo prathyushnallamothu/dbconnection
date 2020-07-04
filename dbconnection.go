@@ -9,7 +9,7 @@ import (
 )
 
 func Connect() *sql.DB {
-	db, err := sql.Open("mysql", "root:pass@tcp(localhost:3306)/login")
+	db, err := sql.Open("mysql", "root:pass@tcp(localhost:3306)/progress")
 	if err != nil {
 		log.Fatal(err)
 	}
